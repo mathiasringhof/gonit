@@ -41,7 +41,7 @@ Just start the app and that's it! I use [winsw](https://github.com/kohsuke/winsw
 Build
 -----
 
-[Nothing special here](http://golang.org/doc/code.html), just `go install github.com/mathiasringhof/gonit` should do the trick.
+[Nothing special here](http://golang.org/doc/code.html), just `go get github.com/mathiasringhof/gonit` should do the trick.
 
 TODO
 ----
