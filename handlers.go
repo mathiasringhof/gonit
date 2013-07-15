@@ -17,10 +17,13 @@ func indexHandler(rw http.ResponseWriter, req *http.Request) {
 }
 
 func apiHandler(rw http.ResponseWriter, req *http.Request) {
-	if req.Method == "GET" {
+	switch req.Method {
+	case "GET":
 		apiGetHandler(rw, req)
-	} else {
+	case "PUT":
 		apiPutHandler(rw, req)
+	default:
+		http.Error(rw, "Only GET & PUT allowed.", 405)
 	}
 }
 
